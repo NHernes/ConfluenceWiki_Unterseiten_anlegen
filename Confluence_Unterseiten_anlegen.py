@@ -12,6 +12,7 @@ try:
   print(auth_token)
 
 except:
+  print("Benötigt wird ein Personal Access Token. Ihr könnt euch diesen hier generieren: https://wikis.fu-berlin.de/plugins/personalaccesstokens/usertokens.action")
   auth_token=input("Auth Token: ")
   f= open("authentication.txt","w+")
   f.write(auth_token)
