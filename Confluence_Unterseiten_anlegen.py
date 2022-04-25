@@ -4,12 +4,12 @@ import csv
 import json
 from requests.auth import HTTPBasicAuth
 import datetime
+import tkinter
 
 #Authentifizierung zum Handshake
 try:
   f = open("authentication.txt", "r")
   auth_token=f.read()
-  print(auth_token)
 
 except:
   print("Benötigt wird ein Personal Access Token. Ihr könnt euch diesen hier generieren: https://wikis.fu-berlin.de/plugins/personalaccesstokens/usertokens.action")
@@ -1700,7 +1700,7 @@ with open ('mailingliste.csv') as csv_file:
 
 
                 #ID der Mutterseite
-                parent_page_id = 1253344091
+                parent_page_id = input("Bitte die Seiten-ID eingeben ")
 
                 #Name des gesamten Wiki-Bereichs
                 space_key = 'eexam'
