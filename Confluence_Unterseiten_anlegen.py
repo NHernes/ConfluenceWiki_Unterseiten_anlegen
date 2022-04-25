@@ -1711,7 +1711,7 @@ with open ('mailingliste.csv') as csv_file:
                 # Request Headers
                 headers = {
                 'Content-Type': 'application/json;charset=iso-8859-1',
-                "Authorization": "Bearer NzA4OTE2MjcxMjY2OuUZMcHzlpuaGII6N1QmZlRPaIbn"
+                "Authorization": "Bearer "+auth_token
                 }
                 # JSON Payload wird generiert
                 data = {
